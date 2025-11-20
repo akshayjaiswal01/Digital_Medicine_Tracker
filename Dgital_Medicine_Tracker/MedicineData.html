@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add Medicine</h2>
+    <form  action="CreateMedicineData" method="post">
+    <div class="form-group">
+        <input type="text" id="medicine-ID" name="medid" required>
+        <label for="medid">Medicine ID</label>
+      </div>
+      <div class="form-group">
+        <input type="text" id="medicine-name" name="medname" required>
+        <label for="medname">Medicine Name</label>
+      </div>
+      <div class="form-group">
+        <input type="text" id="brand" name="medbrand" required>
+        <label for="medbrand">Brand</label>
+      </div>
+      <div class="form-group">
+        <input type="text" id="gender" name="gender" required>
+        <label for="gender">Gender</label>
+      </div>
+      <div class="form-group">
+        <input type="number" id="quantity" name="medquantity" required>
+        <label for="medquantity">Quantity</label>
+      </div>
+      <div class="form-group">
+        <input type="date" id="expiry" name="medexpiry" required>
+        <label for="medexpiry">Expiry Date</label>
+      </div>
+      <div class="form-group">
+        <input type="number" id="price" name="medprice" required>
+        <label for="medprice">Price</label>
+      </div>
+      <button type="submit">Add Medicine</button>
+    </form>
+    <div class="login-links">
+      
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+<style>
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 1px solid #777;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.5s ease all;
+}
+
+input:valid ~ label,
+input:focus ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #777;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.login-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.small-button {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.small-button:hover {
+  background-color: #45a049;
+}
+
+</style>
